@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WCA Evidence Privacy Policy</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="eyebrow">WCA Evidence</div>
+        <h1>Privacy Policy</h1>
+        <p class="lead">
+          WCA Evidence is designed to minimize passive collection and keep the operator in control
+          of evidence handling. This page explains what the app stores locally, what may be sent to
+          a remote server, and what this build does not collect by default.
+        </p>
+        <p class="meta">Last updated: March 2026</p>
+        <nav class="nav" aria-label="Policy navigation">
+          <a href="./terms.html">Terms of Use</a>
+          <a href="./support.html">Support</a>
+        </nav>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>What is stored on the device</h2>
+          <p>
+            Photos, videos, depth sidecars, OCR text, evidence metadata, and timestamped daily
+            notes are stored locally in the app's Application Support container. Upload settings,
+            such as the endpoint URL and case reference, are also stored on-device.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Protected storage</h2>
+          <p>
+            Saved evidence and notes use complete file protection and are excluded from cloud
+            backup. If a bearer token is configured for uploads, it is stored in the iOS Keychain
+            instead of plain preferences.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>What gets transmitted</h2>
+          <p>
+            If the user initiates an upload, the app sends the selected evidence item, associated
+            metadata, story text, and OCR text to the configured remote server. The operator of
+            that destination is responsible for securing and governing that endpoint.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>What this build does not do</h2>
+          <p>
+            This build does not include advertising SDKs, analytics SDKs, or in-app social sharing.
+            It does not transmit evidence to the developer by default unless the configured upload
+            endpoint is controlled by that same operator.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>User choices</h2>
+          <p>
+            Users can keep material local-only, review stories before upload, clear the remote
+            server configuration, and reopen the onboarding flow to review privacy and safety
+            guidance.
+          </p>
+        </article>
+      </section>
+
+      <div class="callout">
+        Replace any placeholder contact details on the support page before publishing these files.
+        If your production deployment changes who receives uploads or how evidence is retained, this
+        policy should be updated to match your real operating model.
+      </div>
+
+      <p class="footer">
+        Questions about this policy can be directed through the contact method listed on
+        <a href="./support.html">Support</a>.
+      </p>
+    </main>
+  </body>
+</html>
